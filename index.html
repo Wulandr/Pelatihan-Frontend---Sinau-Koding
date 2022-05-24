@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input HTML</title>
+    <style>
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            text-align: right;
+        }
+
+        td {
+            width: 120px;
+        }
+
+        #tengah {
+            text-align: center;
+        }
+
+        #kiri {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td>Text :</td>
+            <td><input type="text" id="text" name="text"></td>
+        </tr>
+        <tr>
+            <td>Password :</td>
+            <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+            <td colspan="2" id="tengah">
+                <label for="Radio1">Radio 1</label>
+                <input type="radio" id="Radio1" name="radio1" value="Radio1" checked>
+                <label for="Radio2">Radio 2</label>
+                <input type="radio" id="Radio2" name="radio2" value="Radio2">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="tengah">
+                <label for="checkbox1">checkbox1</label>
+                <input type="checkbox" id="checkbox1" name="checkbox1" value="1" checked>
+                <label for="checkbox2">checkbox 2</label>
+                <input type="checkbox" id="checkbox2" name="checkbox2" value="2" checked>
+            </td>
+        </tr>
+        <tr>
+            <td>Combobox :</td>
+            <td id="kiri"><select id="combo" name="combo">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Textarea :</td>
+            <td id="tengah"><textarea name="textarea" rows="2" cols="22">
+                </textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" id="tengah" style="background-color: white;">
+                <input type="submit" name="Button" value="Button">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
